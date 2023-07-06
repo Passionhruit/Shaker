@@ -1,0 +1,53 @@
+{
+  "cocktails": [
+    {
+      "id": "99db80ee-c453-00c1-118b-e88dfefc7c87",
+      "name": "d",
+      "taste": "d",
+      "img": "",
+      "recipe": "d"
+    },
+    {
+      "id": "6da7fe04-5b1e-07cb-bdcd-ef0dc489f307",
+      "name": "ddd",
+      "taste": "ddd",
+      "img": "",
+      "recipe": "ddd"
+    },
+    {
+      "id": "94162c33-75ac-8d36-9d7e-a7d3c6712adb",
+      "name": "zzz",
+      "taste": "zzz",
+      "img": "",
+      "recipe": "zzzz"
+    },
+    {
+      "id": "ea71b3e2-4755-2f04-43d7-1fbaacdec04f",
+      "name": "에스프레소 마티니",
+      "taste": "커피맛",
+      "img": "",
+      "recipe": "보드카"
+    },
+    {
+      "id": "a1fc97b9-ee7b-8595-98f9-0bab3892afaa",
+      "name": "네그로니",
+      "taste": "맛있음",
+      "img": "",
+      "recipe": "보드카"
+    },
+    {
+      "id": "025f281a-a56b-f304-5eaf-cedae41911c3",
+      "name": "fsfsdfds",
+      "taste": "dddf",
+      "img": "",
+      "recipe": "ddd"
+    },
+    {
+      "id": "89548249-7ba8-aca6-0b65-0f6c08a1c75d",
+      "name": "네그로니",
+      "taste": "네그로니",
+      "img": "",
+      "recipe": "진"
+    }
+  ]
+}
