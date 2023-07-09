@@ -20,4 +20,11 @@ const deleteCocktail = async (id) => {
   await api.delete(`/cocktails/${id}`);
 };
 
+// 수정
+// const patchCocktail = async () => {
+//   await api.patch(`/cocktails/${id}`, {
+//     name: name,
+//   });
+// };
+
 export { getCocktails, addCocktail, deleteCocktail };

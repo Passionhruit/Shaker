@@ -1,53 +1,30 @@
 {
   "cocktails": [
     {
-      "id": "99db80ee-c453-00c1-118b-e88dfefc7c87",
-      "name": "d",
-      "taste": "d",
-      "img": "",
-      "recipe": "d"
+      "id": "178fae8f-7846-8541-66bd-07b83273efc3",
+      "name": "네그로니",
+      "taste": "이탈리아의 식전주",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fnegroni.webp?alt=media&token=ed724e26-605f-4633-8788-91a826380227",
+      "recipe": "진",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
     },
     {
-      "id": "6da7fe04-5b1e-07cb-bdcd-ef0dc489f307",
-      "name": "ddd",
-      "taste": "ddd",
-      "img": "",
-      "recipe": "ddd"
+      "id": "e3da4bf6-3201-72c1-542a-aa9ccd362e52",
+      "name": "아페롤 스프리츠",
+      "taste": "이탈리아의 식전주로 상큼한 맛",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fspritz.webp?alt=media&token=235c1e58-5d49-4aad-9790-4bc782ab87af",
+      "recipe": "프로세코 샴페인 3온즈\n아페롤 2온즈\n샴페인 TOP UP",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
     },
     {
-      "id": "94162c33-75ac-8d36-9d7e-a7d3c6712adb",
-      "name": "zzz",
-      "taste": "zzz",
-      "img": "",
-      "recipe": "zzzz"
-    },
-    {
-      "id": "ea71b3e2-4755-2f04-43d7-1fbaacdec04f",
+      "id": "54857788-acb2-e9e4-77a6-443168c7806a",
       "name": "에스프레소 마티니",
-      "taste": "커피맛",
-      "img": "",
-      "recipe": "보드카"
-    },
-    {
-      "id": "a1fc97b9-ee7b-8595-98f9-0bab3892afaa",
-      "name": "네그로니",
-      "taste": "맛있음",
-      "img": "",
-      "recipe": "보드카"
-    },
-    {
-      "id": "025f281a-a56b-f304-5eaf-cedae41911c3",
-      "name": "fsfsdfds",
-      "taste": "dddf",
-      "img": "",
-      "recipe": "ddd"
-    },
-    {
-      "id": "89548249-7ba8-aca6-0b65-0f6c08a1c75d",
-      "name": "네그로니",
-      "taste": "네그로니",
-      "img": "",
-      "recipe": "진"
+      "taste": "에스프레소를 넣은 칵테일",
+      "garnish": "커피 원두 2~3알",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A6%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%A6%E1%84%89%E1%85%A9%E1%84%86%E1%85%A1%E1%84%90%E1%85%B5%E1%84%82%E1%85%B5.jpg?alt=media&token=72f7ad7f-e5a5-4ffd-89c7-9d784a12fce1",
+      "recipe": "보드카 슈가시럽 깔루아",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": ""
     }
   ]
 }

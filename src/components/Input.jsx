@@ -1,10 +1,16 @@
 import React from "react";
 import { useState } from "react";
+import { getDownloadURL, uploadBytes, ref } from "firebase/storage";
+import { storage, auth } from "../service/firebase";
 import uuid from "react-uuid";
+import axios from "axios";
 import api from "../axios/api";
 import { useMutation, useQueryClient } from "react-query";
 import { addCocktail } from "../api/cocktails";
 import { styled } from "styled-components";
+import useInput from "../hooks/useInput";
+
+import Button from "./Button";
 
 const ModalDiv = styled.div`
   position: fixed;
@@ -29,8 +35,8 @@ const ModalCloseBtn = styled.button`
 `;
 
 const FormContainer = styled.div`
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
   z-index: 2;
   position: fixed;
   top: 50%;
@@ -49,6 +55,12 @@ const ModalOpenBtn = styled.button`
   border-radius: 8px;
   border-style: none;
   cursor: pointer;
+  float: right;
+`;
+
+const InputTitle = styled.h2`
+  color: #657af0;
+  font-weight: bold;
 `;
 
 const NameInput = styled.input`
@@ -61,11 +73,39 @@ const NameInput = styled.input`
   background-color: #f5f5f5;
 `;
 
+const TasteInput = styled(NameInput)``;
+
+const GarnishInput = styled(NameInput)``;
+
+const RecipeInput = styled.textarea`
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: #f5f5f5;
+`;
+
+// 카테고리 옵션
+
+const categoryObtions = [
+  { value: "", label: "베이스주" },
+  { value: "럼", label: "럼" },
+  { value: "보드카", label: "보드카" },
+  { value: "위스키", label: "위스키" },
+  { value: "진", label: "진" },
+  { value: "데킬라", label: "데킬라" },
+];
+
 function Input() {
-  const [name, setName] = useState("");
-  const [taste, setTaste] = useState("");
-  const [img, setImg] = useState("");
-  const [recipe, setRecipe] = useState("");
+  const [name, nameHandler] = useInput("");
+  const [taste, tasteHandler] = useInput("");
+  const [garnish, garnishHandler] = useInput("");
+  const [recipe, recipeHandler] = useInput("");
+  const [selectedFile, setSelectedFile] = useState(new FormData());
+  const [category, setCategory] = useState("");
+  const [downloadURL, setDownloadURL] = useState("");
   const [open, setOpen] = useState(false);
 
   // 리액트 쿼리 관련 코드
@@ -81,74 +121,100 @@ function Input() {
     setOpen(!open);
   };
 
-  const nameChangeHandler = (e) => {
-    setName(e.target.value);
+  const fileSelectHandler = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file);
   };
 
-  const tasteChangeHandler = (e) => {
-    setTaste(e.target.value);
-  };
-
-  const imgChangeHandler = (e) => {
-    setImg(e.target.files[0]);
-  };
-
-  const recipeChangeHandler = (e) => {
-    setRecipe(e.target.value);
-  };
-
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
+
+    // 파일 선택 여부 확인
+    if (!selectedFile) {
+      console.log("파일을 선택해주세요.");
+      return;
+    }
+
+    const imageRef = ref(
+      storage,
+      `${auth.currentUser.uid}/${selectedFile.name}`
+    );
+    await uploadBytes(imageRef, selectedFile);
+
+    const downloadURL = await getDownloadURL(imageRef);
+
+    setDownloadURL(downloadURL);
 
     const newCocktail = {
       id: uuid(),
       name,
       taste,
-      img: img,
+      garnish,
+      img: downloadURL,
       recipe,
+      userId: auth.currentUser.uid,
+      category,
     };
 
     mutation.mutate(newCocktail);
 
-    setName("");
-    setTaste("");
-    setRecipe("");
+    // 폼 초기화
+    nameHandler({ target: { value: "" } });
+    tasteHandler({ target: { value: "" } });
+    garnishHandler({ target: { value: "" } });
+    recipeHandler({ target: { value: "" } });
+  };
+
+  const categoryHandler = (e) => {
+    setCategory(e.target.value);
   };
 
   return (
     <>
-      <ModalOpenBtn onClick={openModalHandler}>칵테일 추가하기</ModalOpenBtn>
+      <Button onClick={openModalHandler}>칵테일 추가</Button>
       <ModalDiv open={open} onClick={openModalHandler}>
         <FormContainer onClick={(e) => e.stopPropagation()}>
           <form>
-            <h2>칵테일 추가하기</h2>
+            <InputTitle>칵테일 추가하기</InputTitle>
             <p>
               {" "}
               <NameInput
                 type="text"
                 value={name}
                 placeholder="칵테일 이름을 입력해주세요."
-                onChange={nameChangeHandler}
+                onChange={nameHandler}
               />
             </p>
             <p>
-              <input
+              <TasteInput
                 type="text"
                 value={taste}
                 placeholder="칵테일 설명을 입력해주세요."
-                onChange={tasteChangeHandler}
+                onChange={tasteHandler}
+              />
+            </p>
+            <p>
+              <GarnishInput
+                type="text"
+                value={garnish}
+                placeholder="칵테일 가니쉬를 입력해주세요."
+                onChange={garnishHandler}
+              />
+            </p>
+            <p>
+              <RecipeInput
+                type="text"
+                value={recipe}
+                placeholder="레시피를 입력해주세요."
+                onChange={recipeHandler}
               />
             </p>
             <p>
               <input
-                type="text"
-                value={recipe}
-                placeholder="레시피를 입력해주세요."
-                onChange={recipeChangeHandler}
+                type="file"
+                onChange={fileSelectHandler}
+                style={{ color: "black" }}
               />
-            </p>
-            <p>
-              사진 <input type="file" onChange={imgChangeHandler} />
             </p>
             <button onClick={submitHandler}>등록</button>
           </form>
