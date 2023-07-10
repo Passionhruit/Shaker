@@ -3,10 +3,12 @@
     {
       "id": "178fae8f-7846-8541-66bd-07b83273efc3",
       "name": "네그로니",
-      "taste": "이탈리아의 식전주",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fnegroni.webp?alt=media&token=ed724e26-605f-4633-8788-91a826380227",
-      "recipe": "진",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+      "taste": "진 베이스의 이탈리아 식전주",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fnegroni.webp?alt=media&token=b1602a07-6df0-4260-b091-80fa2ba7046c",
+      "recipe": "1. 20mL 진\n2. 20mL 캄파리\n3. 20mL 스위트 베르무트",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "garnish": "오렌지 제스트",
+      "category": "진"
     },
     {
       "id": "e3da4bf6-3201-72c1-542a-aa9ccd362e52",
@@ -23,6 +25,46 @@
       "garnish": "커피 원두 2~3알",
       "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A6%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%A6%E1%84%89%E1%85%A9%E1%84%86%E1%85%A1%E1%84%90%E1%85%B5%E1%84%82%E1%85%B5.jpg?alt=media&token=72f7ad7f-e5a5-4ffd-89c7-9d784a12fce1",
       "recipe": "보드카 슈가시럽 깔루아",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": ""
+    },
+    {
+      "id": "7c501bd3-da10-f540-42ee-7e4d89305310",
+      "name": "데킬라 선라이즈",
+      "taste": "일출을 담은 오렌지주스 칵테일",
+      "garnish": "없음",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%83%E1%85%A6%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%84%89%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B3.jpeg?alt=media&token=bfd711f9-9725-4bd2-b3e5-53c8f7b2b67c",
+      "recipe": "1. 데킬라 45mL\n2. 오렌지주스 90mL\n3. 그레나딘 시럽 15mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": ""
+    },
+    {
+      "id": "3a37b6e4-b40e-6a1a-c809-b225e81192f7",
+      "name": "피나콜라다",
+      "taste": "럼 베이스 파인애플 칵테일",
+      "garnish": "파인애플, 체리",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%91%E1%85%B5%E1%84%82%E1%85%A1%E1%84%8F%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1%E1%84%83%E1%85%A1.jpeg?alt=media&token=aa3b4f0a-61f0-4de9-ba35-f12d240640d9",
+      "recipe": "1. 화이트 럼 50mL\n2. 코코넛 크림 30mL\n3. 파인애플주스 50mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "럼"
+    },
+    {
+      "id": "58459a4d-f47c-7a8b-b674-227a6acfa4a0",
+      "name": "올드 패션드",
+      "taste": "위스키 베이스 칵테일",
+      "garnish": "오렌지 제스트, 체리",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%83%E1%85%B3%E1%84%91%E1%85%A2%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B3.jpeg?alt=media&token=9cd05f23-96ea-4cad-87e3-6bfb0106ff6a",
+      "recipe": "1. 버번 위스키 45mL\n2. 파우더 설탕 1tsp\n3. 앙고스투라 비터 1 Dash\n4. 소다 워터 15mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "위스키"
+    },
+    {
+      "id": "72d33b98-820c-dd24-2575-4356f2101bd0",
+      "name": "마가리타",
+      "taste": "데킬라 베이스의 라임 칵테일",
+      "garnish": "없음",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%A1%E1%84%80%E1%85%A1%E1%84%85%E1%85%B5%E1%84%90%E1%85%A1.webp?alt=media&token=9c9f4ab5-8bed-4c46-ba02-a12b254f089a",
+      "recipe": "1. 데킬라 45mL\n2. 트리플섹 15mL\n3. 라임주스 15mL\n\n위의 재료들을 얼음과 함께 8~10초 가량 쉐이킹해 준 다음, \n소금에 리밍한 마가리타 글라스에 따라주면 완성. ",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": ""
     }

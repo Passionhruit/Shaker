@@ -36,26 +36,8 @@ const Taste = styled.li`
 `;
 function Cocktails() {
   const { isLoading, isError, data } = useQuery("cocktails", getCocktails);
-  console.log(data);
 
   const navigate = useNavigate();
-
-  // 리액트 쿼리 관련 코드
-  const queryClient = useQueryClient();
-  const mutation = useMutation(deleteCocktail, {
-    onSuccess: () => {
-      queryClient.invalidateQueries("cocktails");
-      console.log("성공하였습니다.");
-    },
-  });
-
-  const deleteHandler = (id) => {
-    mutation.mutate(id);
-  };
-
-  const updateHandler = (id) => {
-    mutation.mutate(id);
-  };
 
   return (
     <CocktailsContainer>
@@ -73,8 +55,6 @@ function Cocktails() {
               }}
               alt={cocktail.name}
             />
-            {/* <Garnish>{cocktail.garnish}</Garnish>
-            <Recipe>{cocktail.recipe}</Recipe> */}
             <button
               onClick={() => {
                 navigate(`/cocktails/details/${cocktail.id}`);
@@ -82,8 +62,6 @@ function Cocktails() {
             >
               상세보기
             </button>
-            <button>수정</button>
-            <button onClick={() => deleteHandler(cocktail.id)}>삭제</button>
           </CocktailContainer>
         );
       })}

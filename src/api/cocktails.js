@@ -1,4 +1,5 @@
 import api from "../axios/api";
+import { useQuery } from "react-query";
 
 // axios 요청이 들어가는 모든 모듈
 
@@ -21,10 +22,8 @@ const deleteCocktail = async (id) => {
 };
 
 // 수정
-// const patchCocktail = async () => {
-//   await api.patch(`/cocktails/${id}`, {
-//     name: name,
-//   });
-// };
+const updateCocktail = async ({ id, updatedCocktail }) => {
+  await api.patch(`/cocktails/${id}`, updatedCocktail);
+};
 
-export { getCocktails, addCocktail, deleteCocktail };
+export { getCocktails, addCocktail, deleteCocktail, updateCocktail };

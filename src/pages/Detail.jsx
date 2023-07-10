@@ -62,9 +62,8 @@ function Detail() {
                 style={{ width: "350px" }}
                 alt={cocktail.name}
               />
-
-              <li>가니쉬 : {cocktail.garnish}</li>
               <RecipeContainer>
+                <li>가니쉬 : {cocktail.garnish}</li>
                 <pre>
                   <h3>레시피</h3>
                   {cocktail.recipe}
@@ -77,7 +76,6 @@ function Detail() {
               >
                 돌아가기
               </button>
-              <button>수정</button>
               {/* <button onClick={() => deleteHandler(cocktail.id)}>삭제</button> */}
             </CocktailContainer>
           );

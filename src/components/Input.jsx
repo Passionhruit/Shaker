@@ -89,13 +89,14 @@ const RecipeInput = styled.textarea`
 
 // 카테고리 옵션
 
-const categoryObtions = [
+const categoryOptions = [
   { value: "", label: "베이스주" },
   { value: "럼", label: "럼" },
   { value: "보드카", label: "보드카" },
   { value: "위스키", label: "위스키" },
   { value: "진", label: "진" },
   { value: "데킬라", label: "데킬라" },
+  { value: "목테일", label: "목테일" },
 ];
 
 function Input() {
@@ -165,6 +166,20 @@ function Input() {
     recipeHandler({ target: { value: "" } });
   };
 
+  // 카테고리
+
+  const CategorySelect = ({ value, onChange, options }) => {
+    return (
+      <select value={value} onChange={onChange}>
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    );
+  };
+
   const categoryHandler = (e) => {
     setCategory(e.target.value);
   };
@@ -176,8 +191,12 @@ function Input() {
         <FormContainer onClick={(e) => e.stopPropagation()}>
           <form>
             <InputTitle>칵테일 추가하기</InputTitle>
+            <CategorySelect
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              options={categoryOptions}
+            />
             <p>
-              {" "}
               <NameInput
                 type="text"
                 value={name}
