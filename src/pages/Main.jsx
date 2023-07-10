@@ -5,6 +5,7 @@ import { styled } from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 import cocktail from "../img/cocktail.png";
 import { useNavigate } from "react-router-dom";
+import MainText from "../components/MainText";
 
 const MainContainer = styled.div`
   position: absolute;
@@ -28,16 +29,11 @@ const ContentsContainer = styled.div`
   margin: 0 auto;
 `;
 
-const MainTitle = styled.h1`
-  font-size: 90px;
-  margin-top: 20%;
-`;
-
 const ViewMore = styled.button`
-  background: #767575;
+  background: transparent;
+
   color: white;
-  border-radius: 20px;
-  border: none;
+  border: 1px solid white;
   width: 110px;
   font-size: 18px;
   padding: 3px;
@@ -53,13 +49,7 @@ function Main() {
       <Header />
       <MainContainer>
         <ContentsContainer>
-          <MainTitle>
-            MAKE
-            <br />
-            YOUR OWN
-            <br />
-            COCKTAILS{" "}
-          </MainTitle>
+          <MainText />
           <ViewMore
             onClick={() => {
               navigate(`/cocktails`);

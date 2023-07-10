@@ -23,20 +23,20 @@
       "name": "에스프레소 마티니",
       "taste": "에스프레소를 넣은 칵테일",
       "garnish": "커피 원두 2~3알",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A6%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%A6%E1%84%89%E1%85%A9%E1%84%86%E1%85%A1%E1%84%90%E1%85%B5%E1%84%82%E1%85%B5.jpg?alt=media&token=72f7ad7f-e5a5-4ffd-89c7-9d784a12fce1",
-      "recipe": "보드카 슈가시럽 깔루아",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A6%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%A6%E1%84%89%E1%85%A9%E1%84%86%E1%85%A1%E1%84%90%E1%85%B5%E1%84%82%E1%85%B5.jpg?alt=media&token=b32afca6-12fd-4d77-89b5-050abf8f5122",
+      "recipe": "1. 보드카 30mL\n2. 커피 리큐어 (깔루아) 30mL\n3. 에스프레소 30mL\n4. 슈가시럽 20mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
-      "category": ""
+      "category": "보드카"
     },
     {
       "id": "7c501bd3-da10-f540-42ee-7e4d89305310",
       "name": "데킬라 선라이즈",
       "taste": "일출을 담은 오렌지주스 칵테일",
       "garnish": "없음",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%83%E1%85%A6%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%84%89%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B3.jpeg?alt=media&token=bfd711f9-9725-4bd2-b3e5-53c8f7b2b67c",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%83%E1%85%A6%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%84%89%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B3.jpeg?alt=media&token=1bd57f61-a87f-4bfb-8de2-384dd98f3a0b",
       "recipe": "1. 데킬라 45mL\n2. 오렌지주스 90mL\n3. 그레나딘 시럽 15mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
-      "category": ""
+      "category": "데킬라"
     },
     {
       "id": "3a37b6e4-b40e-6a1a-c809-b225e81192f7",
@@ -63,10 +63,20 @@
       "name": "마가리타",
       "taste": "데킬라 베이스의 라임 칵테일",
       "garnish": "없음",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%A1%E1%84%80%E1%85%A1%E1%84%85%E1%85%B5%E1%84%90%E1%85%A1.webp?alt=media&token=9c9f4ab5-8bed-4c46-ba02-a12b254f089a",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%A1%E1%84%80%E1%85%A1%E1%84%85%E1%85%B5%E1%84%90%E1%85%A1.webp?alt=media&token=4c86aa7f-b780-498c-a308-f38289dff24b",
       "recipe": "1. 데킬라 45mL\n2. 트리플섹 15mL\n3. 라임주스 15mL\n\n위의 재료들을 얼음과 함께 8~10초 가량 쉐이킹해 준 다음, \n소금에 리밍한 마가리타 글라스에 따라주면 완성. ",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
-      "category": ""
+      "category": "데킬라"
+    },
+    {
+      "id": "932c9d5e-1c7b-16e3-a468-afc561ea8c05",
+      "name": "레몬라임비터",
+      "taste": "호주 대표 칵테일음료",
+      "garnish": "레몬",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%85%E1%85%A6%E1%84%86%E1%85%A9%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%B5%E1%84%90%E1%85%A5.jpeg?alt=media&token=28dc1c86-86da-4727-ac62-4c04898f4921",
+      "recipe": "1. 레모네이드 (스프라이트)\n2. 라임 한두바퀴.. \n3. 비터스 10방울",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "목테일"
     }
   ]
 }

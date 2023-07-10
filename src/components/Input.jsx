@@ -9,6 +9,7 @@ import { useMutation, useQueryClient } from "react-query";
 import { addCocktail } from "../api/cocktails";
 import { styled } from "styled-components";
 import useInput from "../hooks/useInput";
+import CategorySelect from "./CategorySelect";
 
 import Button from "./Button";
 
@@ -119,7 +120,11 @@ function Input() {
   });
 
   const openModalHandler = () => {
-    setOpen(!open);
+    if (auth.currentUser) {
+      setOpen(!open);
+    } else {
+      alert("로그인 후 사용해주세요.");
+    }
   };
 
   const fileSelectHandler = (e) => {
@@ -164,20 +169,6 @@ function Input() {
     tasteHandler({ target: { value: "" } });
     garnishHandler({ target: { value: "" } });
     recipeHandler({ target: { value: "" } });
-  };
-
-  // 카테고리
-
-  const CategorySelect = ({ value, onChange, options }) => {
-    return (
-      <select value={value} onChange={onChange}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    );
   };
 
   const categoryHandler = (e) => {

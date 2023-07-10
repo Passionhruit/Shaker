@@ -36,7 +36,13 @@ const RecipeContainer = styled.div`
   width: 400px;
   height: 150px;
   margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 20px;
   background-color: #e5e5e5;
+  overflow: scroll;
 `;
 
 function Detail() {
@@ -59,7 +65,7 @@ function Detail() {
               <Taste>{cocktail.taste}</Taste>
               <img
                 src={cocktail.img}
-                style={{ width: "350px" }}
+                style={{ width: "300px" }}
                 alt={cocktail.name}
               />
               <RecipeContainer>
