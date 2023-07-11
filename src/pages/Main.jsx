@@ -35,10 +35,14 @@ const ViewMore = styled.button`
   color: white;
   border: 1px solid white;
   width: 110px;
-  font-size: 18px;
+  font-size: 17px;
   padding: 3px;
   margin-top: 10px;
   cursor: pointer;
+  &:hover {
+    background-color: #e6e4e4;
+    color: #202020;
+  }
 `;
 
 function Main() {

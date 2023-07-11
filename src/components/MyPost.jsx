@@ -4,13 +4,13 @@ import { storage, auth } from "../service/firebase";
 import { useQuery } from "react-query";
 import { getCocktails } from "../api/cocktails";
 import { styled } from "styled-components";
-import uuid from "react-uuid";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQueryClient } from "react-query";
 import { deleteCocktail, updateCocktail } from "../api/cocktails";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import useInput from "../hooks/useInput";
+import Button from "./Button";
 
 const CocktailsContainer = styled.div`
   margin: 50px auto;
@@ -20,18 +20,37 @@ const CocktailContainer = styled.ul`
   display: inline-table;
   width: 250px;
   height: 330px;
-  background-color: #ececec;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(254, 252, 252, 0.043) 10%,
+      rgba(20, 20, 20, 0.8) 70%,
+      rgba(20, 20, 20, 1)
+    ),
+    ${(props) => `url(${props.img})`};
+  background-size: auto 100%;
+  background-position: center;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
-  color: #242424;
+  color: white;
   margin: 15px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(254, 252, 252, 0) 10%,
+        rgba(20, 20, 20, 0.4) 70%,
+        rgba(20, 20, 20, 1)
+      ),
+      ${(props) => `url(${props.img})`};
+  }
+  background-size: cover;
 `;
 
 const Name = styled.li`
   font-size: 22px;
   font-weight: bold;
+  margin-top: 250px;
 `;
 
 const Taste = styled.li`
@@ -43,7 +62,7 @@ const ModalDiv = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -74,15 +93,6 @@ const FormContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-const ModalOpenBtn = styled.button`
-  width: 170px;
-  height: 40px;
-  border-radius: 8px;
-  border-style: none;
-  cursor: pointer;
-  float: right;
 `;
 
 const InputTitle = styled.h2`
@@ -165,6 +175,7 @@ function MyPost() {
     tasteHandler({ target: { value: cocktail.taste } });
     garnishHandler({ target: { value: cocktail.garnish } });
     recipeHandler({ target: { value: cocktail.recipe } });
+    setCategory(cocktail.category);
   };
 
   const fileSelectHandler = (e) => {
@@ -214,7 +225,10 @@ function MyPost() {
 
   // 삭제하기
   const deleteHandler = (id) => {
-    deleteMutation.mutate(id);
+    const confirmed = window.confirm("이 게시물을 삭제하시겠습니까?");
+    if (confirmed) {
+      deleteMutation.mutate(id);
+    }
   };
 
   const CategorySelect = ({ value, onChange, options }) => {
@@ -231,36 +245,34 @@ function MyPost() {
 
   return (
     <div>
-      MyPost
+      내가 작성한 글
       <CocktailsContainer>
         {data
           ?.filter((cocktail) => cocktail.userId == params.id)
           .map((cocktail) => {
             return (
-              <CocktailContainer key={cocktail.id}>
+              <CocktailContainer
+                key={cocktail.id}
+                img={cocktail.img}
+                // onClick={() => {
+                //   navigate(`/cocktails/details/${cocktail.id}`);
+                // }}
+              >
                 <Name>{cocktail.name}</Name>
                 <Taste>{cocktail.taste}</Taste>
-                <img
-                  src={cocktail.img}
-                  style={{
-                    width: "220px",
-                    borderRadius: "220px",
-                    marginTop: "10px",
+                <Button
+                  onClick={(e) => {
+                    openModalHandler(cocktail);
+                    e.stopPropagation();
                   }}
-                  alt={cocktail.name}
-                />
-                <button
-                  onClick={() => {
-                    navigate(`/cocktails/details/${cocktail.id}`);
-                  }}
+                  type={"edit"}
                 >
-                  상세보기
-                </button>
-                <button onClick={() => openModalHandler(cocktail)}>수정</button>
+                  수정
+                </Button>
                 <ModalDiv open={open} onClick={openModalHandler}>
                   <FormContainer onClick={(e) => e.stopPropagation()}>
                     <form>
-                      <InputTitle>칵테일 추가하기</InputTitle>
+                      <InputTitle>글 수정하기</InputTitle>
                       <CategorySelect
                         value={category}
                         onChange={(e) => setCategory(e.target.value)}
@@ -305,15 +317,23 @@ function MyPost() {
                           style={{ color: "black" }}
                         />
                       </p>
-                      <button onClick={(e) => updateHandler(modalId, e)}>
+                      <Button onClick={(e) => updateHandler(modalId, e)}>
                         등록
-                      </button>
+                      </Button>
                     </form>
                     <ModalCloseBtn onClick={openModalHandler}>x</ModalCloseBtn>
                   </FormContainer>
                 </ModalDiv>
 
-                <button onClick={() => deleteHandler(cocktail.id)}>삭제</button>
+                <Button
+                  onClick={(e) => {
+                    deleteHandler(cocktail.id);
+                    e.stopPropagation();
+                  }}
+                  type="edit"
+                >
+                  삭제
+                </Button>
               </CocktailContainer>
             );
           })}

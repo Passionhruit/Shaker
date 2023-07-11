@@ -1,14 +1,36 @@
 import React from "react";
+import { styled } from "styled-components";
 
-function CategorySelect({ value, onChange, options }) {
+const ListSelect = styled.select`
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 15px;
+  padding-left: 8px;
+  margin-top: 20px;
+  outline: none;
+`;
+
+const AddSelect = styled.select`
+  width: 80px;
+  height: 25px;
+  padding: 5px;
+  outline: none;
+  float: right;
+`;
+
+function CategorySelect({ value, onChange, options, type }) {
+  const SelectComponent = type === "list" ? ListSelect : AddSelect;
   return (
-    <select value={value} onChange={onChange}>
+    <SelectComponent value={value} onChange={onChange}>
       {options.map((option) => (
         <option key={option.value} value={option.value}>
           {option.label}
         </option>
       ))}
-    </select>
+    </SelectComponent>
   );
 }
 

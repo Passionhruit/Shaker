@@ -10,7 +10,6 @@ import { addCocktail } from "../api/cocktails";
 import { styled } from "styled-components";
 import useInput from "../hooks/useInput";
 import CategorySelect from "./CategorySelect";
-
 import Button from "./Button";
 
 const ModalDiv = styled.div`
@@ -24,17 +23,6 @@ const ModalDiv = styled.div`
   display: ${(props) => (props.open ? "block" : "none")};
 `;
 
-const ModalCloseBtn = styled.button`
-  position: absolute;
-  background-color: transparent;
-  border-style: none;
-  right: 10px;
-  top: 10px;
-  font-size: 17px;
-
-  cursor: pointer;
-`;
-
 const FormContainer = styled.div`
   width: 700px;
   height: 500px;
@@ -44,24 +32,15 @@ const FormContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-const ModalOpenBtn = styled.button`
-  width: 170px;
-  height: 40px;
-  border-radius: 8px;
-  border-style: none;
-  cursor: pointer;
-  float: right;
-`;
-
 const InputTitle = styled.h2`
-  color: #657af0;
+  color: #525252;
   font-weight: bold;
+  display: inline-block;
 `;
 
 const NameInput = styled.input`
@@ -72,6 +51,7 @@ const NameInput = styled.input`
   margin-top: 20px;
   border: none;
   background-color: #f5f5f5;
+  outline: none;
 `;
 
 const TasteInput = styled(NameInput)``;
@@ -86,17 +66,18 @@ const RecipeInput = styled.textarea`
   margin-top: 20px;
   border: none;
   background-color: #f5f5f5;
+  outline: none;
 `;
 
 // 카테고리 옵션
 
 const categoryOptions = [
   { value: "", label: "베이스주" },
+  { value: "데킬라", label: "데킬라" },
   { value: "럼", label: "럼" },
   { value: "보드카", label: "보드카" },
   { value: "위스키", label: "위스키" },
   { value: "진", label: "진" },
-  { value: "데킬라", label: "데킬라" },
   { value: "목테일", label: "목테일" },
 ];
 
@@ -134,50 +115,54 @@ function Input() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    // 사진 제외한 모든 항목 입력 필터
+    if (name && taste && garnish && recipe) {
+      // 파일 선택 여부 확인
+      if (!selectedFile) {
+        console.log("파일을 선택해주세요.");
+        return;
+      }
 
-    // 파일 선택 여부 확인
-    if (!selectedFile) {
-      console.log("파일을 선택해주세요.");
-      return;
+      const imageRef = ref(
+        storage,
+        `${auth.currentUser.uid}/${selectedFile.name}`
+      );
+      await uploadBytes(imageRef, selectedFile);
+
+      const downloadURL = await getDownloadURL(imageRef);
+
+      setDownloadURL(downloadURL);
+
+      const newCocktail = {
+        id: uuid(),
+        name,
+        taste,
+        garnish,
+        img: downloadURL,
+        recipe,
+        userId: auth.currentUser.uid,
+        category,
+      };
+
+      mutation.mutate(newCocktail);
+
+      // 폼 초기화
+      nameHandler({ target: { value: "" } });
+      tasteHandler({ target: { value: "" } });
+      garnishHandler({ target: { value: "" } });
+      recipeHandler({ target: { value: "" } });
+
+      setOpen(!open);
+    } else {
+      alert("모든 항목을 입력해주세요.");
     }
-
-    const imageRef = ref(
-      storage,
-      `${auth.currentUser.uid}/${selectedFile.name}`
-    );
-    await uploadBytes(imageRef, selectedFile);
-
-    const downloadURL = await getDownloadURL(imageRef);
-
-    setDownloadURL(downloadURL);
-
-    const newCocktail = {
-      id: uuid(),
-      name,
-      taste,
-      garnish,
-      img: downloadURL,
-      recipe,
-      userId: auth.currentUser.uid,
-      category,
-    };
-
-    mutation.mutate(newCocktail);
-
-    // 폼 초기화
-    nameHandler({ target: { value: "" } });
-    tasteHandler({ target: { value: "" } });
-    garnishHandler({ target: { value: "" } });
-    recipeHandler({ target: { value: "" } });
-  };
-
-  const categoryHandler = (e) => {
-    setCategory(e.target.value);
   };
 
   return (
     <>
-      <Button onClick={openModalHandler}>칵테일 추가</Button>
+      <Button onClick={openModalHandler} type={"add"}>
+        칵테일 추가
+      </Button>
       <ModalDiv open={open} onClick={openModalHandler}>
         <FormContainer onClick={(e) => e.stopPropagation()}>
           <form>
@@ -226,9 +211,11 @@ function Input() {
                 style={{ color: "black" }}
               />
             </p>
-            <button onClick={submitHandler}>등록</button>
+            <Button onClick={submitHandler}>등록</Button>
           </form>
-          <ModalCloseBtn onClick={openModalHandler}>x</ModalCloseBtn>
+          <Button onClick={openModalHandler} type={"close"}>
+            x
+          </Button>
         </FormContainer>
       </ModalDiv>
     </>

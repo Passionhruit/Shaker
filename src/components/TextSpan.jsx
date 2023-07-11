@@ -5,7 +5,11 @@ import { useState } from "react";
 
 const StSpan = styled(motion.span)`
   font-size: 5.5rem;
+  font-weight: 500;
   display: inline-block;
+  &:hover {
+    color: #f5e162;
+  }
 `;
 
 function TextSpan({ children }) {
@@ -21,9 +25,6 @@ function TextSpan({ children }) {
         "scale3d(0.9, 1.05, 1)",
         "scale3d(1, 1, 1)",
       ],
-      //   transition: {
-      //     times: [0, 0.4, 0.6, 0.7, 0.8, 0.9],
-      //   },
     });
     setIsPlaying(true);
   };

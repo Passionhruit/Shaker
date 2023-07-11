@@ -4,7 +4,7 @@
       "id": "178fae8f-7846-8541-66bd-07b83273efc3",
       "name": "네그로니",
       "taste": "진 베이스의 이탈리아 식전주",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fnegroni.webp?alt=media&token=b1602a07-6df0-4260-b091-80fa2ba7046c",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fnegroni.webp?alt=media&token=b1d67892-52c0-4bd8-927a-4272801f424b",
       "recipe": "1. 20mL 진\n2. 20mL 캄파리\n3. 20mL 스위트 베르무트",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "garnish": "오렌지 제스트",
@@ -14,9 +14,10 @@
       "id": "e3da4bf6-3201-72c1-542a-aa9ccd362e52",
       "name": "아페롤 스프리츠",
       "taste": "이탈리아의 식전주로 상큼한 맛",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fspritz.webp?alt=media&token=235c1e58-5d49-4aad-9790-4bc782ab87af",
-      "recipe": "프로세코 샴페인 3온즈\n아페롤 2온즈\n샴페인 TOP UP",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2Fspritz.webp?alt=media&token=2f6d9080-ca1f-4b1d-81ec-aae1b833a0d8",
+      "recipe": "1. 프로세코 샴페인 90mL\n2. 아페롤 리큐어 60mL\n3. 소다워터 Top up",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "garnish": "없음"
     },
     {
       "id": "54857788-acb2-e9e4-77a6-443168c7806a",
@@ -33,7 +34,7 @@
       "name": "데킬라 선라이즈",
       "taste": "일출을 담은 오렌지주스 칵테일",
       "garnish": "없음",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%83%E1%85%A6%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%84%89%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B3.jpeg?alt=media&token=1bd57f61-a87f-4bfb-8de2-384dd98f3a0b",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%83%E1%85%A6%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B3.webp?alt=media&token=af8e6906-d9a1-480c-8581-b1ad2622f788",
       "recipe": "1. 데킬라 45mL\n2. 오렌지주스 90mL\n3. 그레나딘 시럽 15mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "데킬라"
@@ -43,7 +44,7 @@
       "name": "피나콜라다",
       "taste": "럼 베이스 파인애플 칵테일",
       "garnish": "파인애플, 체리",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%91%E1%85%B5%E1%84%82%E1%85%A1%E1%84%8F%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1%E1%84%83%E1%85%A1.jpeg?alt=media&token=aa3b4f0a-61f0-4de9-ba35-f12d240640d9",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%91%E1%85%B5%E1%84%82%E1%85%A1%E1%84%8F%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1%E1%84%83%E1%85%A1.webp?alt=media&token=8afb0bba-6101-4c29-b5bd-9576da70e066",
       "recipe": "1. 화이트 럼 50mL\n2. 코코넛 크림 30mL\n3. 파인애플주스 50mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "럼"
@@ -53,7 +54,7 @@
       "name": "올드 패션드",
       "taste": "위스키 베이스 칵테일",
       "garnish": "오렌지 제스트, 체리",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%83%E1%85%B3%E1%84%91%E1%85%A2%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B3.jpeg?alt=media&token=9cd05f23-96ea-4cad-87e3-6bfb0106ff6a",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%83%E1%85%B3%E1%84%91%E1%85%A2%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B3.jpeg?alt=media&token=6a2f887f-d857-4e7e-8a4b-9e45b7c48332",
       "recipe": "1. 버번 위스키 45mL\n2. 파우더 설탕 1tsp\n3. 앙고스투라 비터 1 Dash\n4. 소다 워터 15mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "위스키"
@@ -63,20 +64,60 @@
       "name": "마가리타",
       "taste": "데킬라 베이스의 라임 칵테일",
       "garnish": "없음",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%A1%E1%84%80%E1%85%A1%E1%84%85%E1%85%B5%E1%84%90%E1%85%A1.webp?alt=media&token=4c86aa7f-b780-498c-a308-f38289dff24b",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%A1%E1%84%80%E1%85%A1%E1%84%85%E1%85%B5%E1%84%90%E1%85%A1.jpeg?alt=media&token=cb23dbc9-f18a-4200-b1f0-18a16a926ad3",
       "recipe": "1. 데킬라 45mL\n2. 트리플섹 15mL\n3. 라임주스 15mL\n\n위의 재료들을 얼음과 함께 8~10초 가량 쉐이킹해 준 다음, \n소금에 리밍한 마가리타 글라스에 따라주면 완성. ",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "데킬라"
     },
     {
       "id": "932c9d5e-1c7b-16e3-a468-afc561ea8c05",
-      "name": "레몬라임비터",
+      "name": "레몬라임비터스",
       "taste": "호주 대표 칵테일음료",
       "garnish": "레몬",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%85%E1%85%A6%E1%84%86%E1%85%A9%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%B5%E1%84%90%E1%85%A5.jpeg?alt=media&token=28dc1c86-86da-4727-ac62-4c04898f4921",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%85%E1%85%A6%E1%84%86%E1%85%A9%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%B5%E1%84%90%E1%85%A5.jpeg?alt=media&token=5c8a665c-6420-4aaa-9a62-dad7af85845a",
       "recipe": "1. 레모네이드 (스프라이트)\n2. 라임 한두바퀴.. \n3. 비터스 10방울",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "목테일"
+    },
+    {
+      "id": "96481bfb-3e7f-67c0-b319-195ad5373829",
+      "name": "모히또",
+      "taste": "모히또에서 몰디브 한잔",
+      "garnish": "라임, 레몬 슬라이스",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%A9%E1%84%92%E1%85%B5%E1%84%84%E1%85%A9.jpeg?alt=media&token=d3421a9f-0c97-4208-b02e-766ee2b5a645",
+      "recipe": "1. 화이트 럼 45mL\n2. 민트 6잎\n3. 백설탕 2tsp\n4. 라임주스 20mL\n5. 탄산수 Top up",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "럼"
+    },
+    {
+      "id": "adad9178-f4c3-224e-e315-236b70361f72",
+      "name": "코스모폴리탄",
+      "taste": "대표적인 레이디 킬러 칵테일",
+      "garnish": "레몬 필 트위스트",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8F%E1%85%A9%E1%84%89%E1%85%B3%E1%84%86%E1%85%A9%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%90%E1%85%A1%E1%86%AB.webp?alt=media&token=74114d64-ed12-4d3b-8d7f-1c6ac3b3e7b5",
+      "recipe": "1. 보드카 30mL\n2. 트리플 섹 15mL\n3. 라임주스 15mL\n4. 크렌베리 주스 15mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "보드카"
+    },
+    {
+      "id": "7284399a-e9c2-2255-4cdc-9f136a57d327",
+      "name": "블루 하와이",
+      "taste": "블루 큐라소를 넣은 파인애플 칵테일",
+      "garnish": "파인애플 스틱, 체리",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%AE%E1%84%92%E1%85%A1%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%B5.jpeg?alt=media&token=5aa02343-4d0b-4246-afce-b2538482849b",
+      "recipe": "1. 럼 30mL\n2. 블루 큐라소 30mL\n3. 말리부 30mL\n4. 파인애플주스 75mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "럼"
+    },
+    {
+      "id": "e25d4ee3-7f3e-75c8-d019-6ec16ab667c4",
+      "name": "김렛",
+      "taste": "진 베이스 새콤한 맛의 칵테일",
+      "garnish": "라임 웨지",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%80%E1%85%B5%E1%86%B7%E1%84%85%E1%85%A6%E1%86%BA.webp?alt=media&token=51a6ca41-41ec-4c35-9e05-686fb61b2e93",
+      "recipe": "1. 드라이 진 45mL\n2. 라임주스  15mL\n3. 설탕 1tsp",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "진"
     }
   ]
 }
