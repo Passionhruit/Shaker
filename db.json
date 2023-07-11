@@ -119,5 +119,28 @@
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "진"
     }
+  ],
+  "comments": [
+    {
+      "id": "1280b6e1-e8a1-dca9-3d04-5ca757b9681f",
+      "nickName": "아",
+      "comment": "아아아아아아아아아ㅏ",
+      "cocktailId": "178fae8f-7846-8541-66bd-07b83273efc3",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "88d232c2-63c9-b5a5-666b-c5dd212f8b18",
+      "nickName": "데킬라 선라이즈",
+      "comment": "선라이즈",
+      "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "dc63b04d-286c-1e33-cc18-b9ad953074a5",
+      "nickName": "칵테일",
+      "comment": "칵테일",
+      "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    }
   ]
 }

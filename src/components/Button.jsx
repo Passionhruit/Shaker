@@ -57,6 +57,11 @@ const EditBtn = styled.button`
   }
 `;
 
+const DeleteCommentBtn = styled.button`
+  width: 50px;
+  height: 25px;
+`;
+
 function Button({ children, onClick, type }) {
   let ButtonComponent;
 
@@ -72,6 +77,9 @@ function Button({ children, onClick, type }) {
       break;
     case "edit":
       ButtonComponent = EditBtn;
+      break;
+    case "deleteComment":
+      ButtonComponent = DeleteCommentBtn;
       break;
     default:
       ButtonComponent = CommonBtn;

@@ -9,6 +9,7 @@ import { styled } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import { useMutation, useQueryClient } from "react-query";
+import Comments from "../components/Comments";
 
 const CocktailContainer = styled.ul`
   margin: 30px auto;
@@ -102,6 +103,8 @@ function Detail() {
             </CocktailContainer>
           );
         })}
+
+      <Comments />
       <Footer />
     </>
   );
