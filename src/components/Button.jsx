@@ -83,6 +83,35 @@ const LoginBtn = styled.button`
   margin: 10px auto 0 auto;
 `;
 
+const googleLoginBtn = styled.button`
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+  height: 25px;
+  margin-top: 10px;
+  border-style: none;
+  border: 1px solid gray;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  line-height: 20px;
+  cursor: pointer;
+`;
+
+const githubLoginBtn = styled.button`
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+  height: 25px;
+  margin-top: 10px;
+  border-style: none;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  line-height: 20px;
+  cursor: pointer;
+`;
+
 function Button({ children, onClick, type }) {
   let ButtonComponent;
 
@@ -104,6 +133,12 @@ function Button({ children, onClick, type }) {
       break;
     case "loginBtn":
       ButtonComponent = LoginBtn;
+      break;
+    case "gihubBtn":
+      ButtonComponent = githubLoginBtn;
+      break;
+    case "googleBtn":
+      ButtonComponent = googleLoginBtn;
       break;
     default:
       ButtonComponent = CommonBtn;

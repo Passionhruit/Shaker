@@ -34,7 +34,7 @@
       "name": "데킬라 선라이즈",
       "taste": "일출을 담은 오렌지주스 칵테일",
       "garnish": "없음",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%83%E1%85%A6%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%20%E1%84%89%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B3.webp?alt=media&token=af8e6906-d9a1-480c-8581-b1ad2622f788",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%83%E1%85%A6%E1%84%8F%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A1%E1%84%89%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B3.webp?alt=media&token=d3489d4a-4b66-48b3-915d-1a159aa52689",
       "recipe": "1. 데킬라 45mL\n2. 오렌지주스 90mL\n3. 그레나딘 시럽 15mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "데킬라"
@@ -134,27 +134,23 @@
       "name": "잭콕",
       "taste": "콜라와 잭다니엘을 섞은 칵테일",
       "garnish": "오렌지 제스트 (선택)",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8C%E1%85%A2%E1%86%A8%E1%84%8F%E1%85%A9%E1%86%A8.jpeg?alt=media&token=df710b96-3bdc-4b32-a390-a983cf660c8e",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8C%E1%85%A2%E1%86%A8%E1%84%8F%E1%85%A9%E1%86%A8.jpeg?alt=media&token=146c845f-37a7-496f-a716-888a36ef9034",
       "recipe": "1. 잭 다니엘 45mL\n2. 코카콜라 Top up\n\n기주인 위스키를 먼저 넣고 그 위에 콜라를 넣어야 한다.",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "위스키"
+    },
+    {
+      "id": "bc45fd10-bb49-a13f-9309-792e19a0be0f",
+      "name": "맨해튼",
+      "taste": "위스키 베이스 칵테일의 여왕",
+      "garnish": "체리",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%A2%E1%86%AB%E1%84%92%E1%85%A1%E1%84%90%E1%85%A1%E1%86%AB.webp?alt=media&token=142bfa9e-ec27-471d-90d9-4fdf0ccae0db",
+      "recipe": "1. 버번 위스키 45mL\n2. 스위트 베르무트 22.5mL\n3. 앙고스투라 비터스 1Dash",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "위스키"
     }
   ],
   "comments": [
-    {
-      "id": "88d232c2-63c9-b5a5-666b-c5dd212f8b18",
-      "nickName": "데킬라 선라이즈",
-      "comment": "선라이즈",
-      "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
-    },
-    {
-      "id": "fa291b04-0be7-6ba9-58da-2248d6be3752",
-      "nickName": "스프리츠",
-      "comment": "스프리츠",
-      "cocktailId": "e3da4bf6-3201-72c1-542a-aa9ccd362e52",
-      "userId": "1FUwRjdBc7NDQO2Suv9iTHwkQfz1"
-    },
     {
       "id": "7d3c6ba8-d284-82d4-6ddd-e13a732c5089",
       "nickName": "파인애플",
@@ -163,32 +159,18 @@
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
     },
     {
-      "id": "c42a5267-b0dc-308d-a7e6-7c84effbbc83",
-      "nickName": "닉네임",
-      "comment": "내용입니다.",
-      "cocktailId": "54857788-acb2-e9e4-77a6-443168c7806a",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
-    },
-    {
-      "id": "80b7f827-feb8-ecb9-da1d-1817bea8a976",
-      "nickName": "닉네임",
-      "comment": "내용",
-      "cocktailId": "54857788-acb2-e9e4-77a6-443168c7806a",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
-    },
-    {
-      "id": "6380d2f5-d030-90ab-83ee-0b2abaedd132",
-      "nickName": "dd",
-      "comment": "ddd",
-      "cocktailId": "54857788-acb2-e9e4-77a6-443168c7806a",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
-    },
-    {
       "id": "d8f3573b-3981-1994-f2d6-97584fff8170",
       "nickName": "데킬라 마니아",
       "comment": "너무맛있어보입니다!!",
       "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "c322d6f6-2735-0898-781f-64ef7bde63f3",
+      "nickName": "깃허브",
+      "comment": "스프리츠 제일 좋아해요!",
+      "cocktailId": "e3da4bf6-3201-72c1-542a-aa9ccd362e52",
+      "userId": "zfKvBflpCWbdF8D20wTRzT1X7TE3"
     }
   ]
 }

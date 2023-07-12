@@ -64,6 +64,7 @@ const EmailInput = styled.input`
   margin-top: 20px;
   border: none;
   background-color: #f5f5f5;
+  outline: none;
 `;
 
 const PasswordInput = styled(EmailInput)``;
@@ -79,7 +80,7 @@ function SignIn() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-      console.log("user", user);
+      // console.log("user", user);
       return !auth.currentUser ? setLogin("로그인") : setLogin("로그아웃");
     });
   }, [auth]);
@@ -111,12 +112,28 @@ function SignIn() {
   };
 
   // 구글 로그인
-  function signInWithGoogle() {
+  function signInWithGoogle(e) {
+    e.preventDefault();
     const provider = new GoogleAuthProvider(); // provider 구글 설정
     signInWithPopup(auth, provider) // 팝업창 띄워서 로그인
       .then((data) => {
         setUserData(data.user); // user data 설정
-        console.log(data); // console에 UserCredentialImpl 출력
+        // console.log("google", data); // console에 UserCredentialImpl 출력
+        setOpen(false);
+      })
+      .catch((err) => {
+        // console.log(err);
+      });
+  }
+
+  function signInWithGithub(e) {
+    e.preventDefault();
+    const provider = new GithubAuthProvider(); // provider 깃허브 설정
+    signInWithPopup(auth, provider) // 팝업창 띄워서 로그인
+      .then((data) => {
+        setUserData(data.user); // user data 설정
+        // console.log(data); // console에 UserCredentialImpl 출력
+        setOpen(false);
       })
       .catch((err) => {
         console.log(err);
@@ -154,27 +171,22 @@ function SignIn() {
             <Button onClick={signInWithEmail} type="loginBtn">
               로그인
             </Button>
-            <button
-              style={{
-                width: "250px",
-                height: "25px",
-                marginTop: "10px",
-                border: "1px solid gray",
-                backgroundColor: "white",
-                color: "black",
-                lineHeight: "20px",
-                borderRadius: "3px",
-                cursor: "pointer",
-              }}
-              onClick={signInWithGoogle}
-            >
+            <Button onClick={signInWithGoogle} type="googleBtn">
               <img
                 src={google}
                 alt="구글로고"
                 style={{ width: "20px", float: "left" }}
               />
               구글 계정으로 로그인
-            </button>
+            </Button>
+            <Button onClick={signInWithGithub} type="gihubBtn">
+              <img
+                src={github}
+                alt="깃허브로고"
+                style={{ width: "20px", float: "left" }}
+              />
+              깃허브 계정으로 로그인
+            </Button>
           </LoginForm>
           <Button onClick={openLoginModalHandler} type={"close"}>
             x

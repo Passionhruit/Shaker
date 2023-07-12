@@ -51,7 +51,8 @@ const RecipeContainer = styled.div`
   border-radius: 10px;
   margin-top: 15px;
   font-size: 20px;
-  overflow: scroll;
+  overflow: auto;
+  max-height: 200px;
 `;
 
 const RecipeSubTitle = styled.h3`

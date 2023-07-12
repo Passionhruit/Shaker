@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 function App() {
   useEffect(() => {
-    console.log("app", app);
+    // console.log("app", app);
   }, []);
   return (
     <QueryClientProvider client={queryClient}>
