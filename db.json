@@ -54,8 +54,8 @@
       "name": "올드 패션드",
       "taste": "위스키 베이스 칵테일",
       "garnish": "오렌지 제스트, 체리",
-      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%83%E1%85%B3%E1%84%91%E1%85%A2%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B3.jpeg?alt=media&token=6a2f887f-d857-4e7e-8a4b-9e45b7c48332",
-      "recipe": "1. 버번 위스키 45mL\n2. 파우더 설탕 1tsp\n3. 앙고스투라 비터 1 Dash\n4. 소다 워터 15mL",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%83%E1%85%B3%E1%84%91%E1%85%A2%E1%84%89%E1%85%A7%E1%86%AB%E1%84%83%E1%85%B3.jpeg?alt=media&token=08dc338a-2c90-4502-92bc-c5a65fe61069",
+      "recipe": "1. 버번 위스키 45mL\n2. 파우더 설탕 1tsp\n3. 앙고스투라 비터 1 Dash (5~6방울)\n4. 소다 워터 15mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "위스키"
     },
@@ -118,16 +118,29 @@
       "recipe": "1. 드라이 진 45mL\n2. 라임주스  15mL\n3. 설탕 1tsp",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "진"
+    },
+    {
+      "id": "3471c427-d32c-fabd-6334-2dc8420513e8",
+      "name": "셜리 템플",
+      "taste": "아역배우 셜리 템플을 위한 목테일",
+      "garnish": "체리",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%89%E1%85%A7%E1%86%AF%E1%84%85%E1%85%B5%E1%84%90%E1%85%A6%E1%86%B7%E1%84%91%E1%85%B3%E1%86%AF.jpeg?alt=media&token=620d0f65-71b8-45ae-ad9f-50fb6f687cf0",
+      "recipe": "1. 그레나딘 시럽 15mL\n2. 진저에일 한 캔",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "목테일"
+    },
+    {
+      "id": "18813f6f-bf82-8ba3-011f-5bb80eae75bb",
+      "name": "잭콕",
+      "taste": "콜라와 잭다니엘을 섞은 칵테일",
+      "garnish": "오렌지 제스트 (선택)",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%8C%E1%85%A2%E1%86%A8%E1%84%8F%E1%85%A9%E1%86%A8.jpeg?alt=media&token=df710b96-3bdc-4b32-a390-a983cf660c8e",
+      "recipe": "1. 잭 다니엘 45mL\n2. 코카콜라 Top up\n\n기주인 위스키를 먼저 넣고 그 위에 콜라를 넣어야 한다.",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "위스키"
     }
   ],
   "comments": [
-    {
-      "id": "1280b6e1-e8a1-dca9-3d04-5ca757b9681f",
-      "nickName": "아",
-      "comment": "아아아아아아아아아ㅏ",
-      "cocktailId": "178fae8f-7846-8541-66bd-07b83273efc3",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
-    },
     {
       "id": "88d232c2-63c9-b5a5-666b-c5dd212f8b18",
       "nickName": "데킬라 선라이즈",
@@ -136,9 +149,44 @@
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
     },
     {
-      "id": "dc63b04d-286c-1e33-cc18-b9ad953074a5",
-      "nickName": "칵테일",
-      "comment": "칵테일",
+      "id": "fa291b04-0be7-6ba9-58da-2248d6be3752",
+      "nickName": "스프리츠",
+      "comment": "스프리츠",
+      "cocktailId": "e3da4bf6-3201-72c1-542a-aa9ccd362e52",
+      "userId": "1FUwRjdBc7NDQO2Suv9iTHwkQfz1"
+    },
+    {
+      "id": "7d3c6ba8-d284-82d4-6ddd-e13a732c5089",
+      "nickName": "파인애플",
+      "comment": "제가 제일 좋아하는 칵테일 입니다!",
+      "cocktailId": "3a37b6e4-b40e-6a1a-c809-b225e81192f7",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "c42a5267-b0dc-308d-a7e6-7c84effbbc83",
+      "nickName": "닉네임",
+      "comment": "내용입니다.",
+      "cocktailId": "54857788-acb2-e9e4-77a6-443168c7806a",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "80b7f827-feb8-ecb9-da1d-1817bea8a976",
+      "nickName": "닉네임",
+      "comment": "내용",
+      "cocktailId": "54857788-acb2-e9e4-77a6-443168c7806a",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "6380d2f5-d030-90ab-83ee-0b2abaedd132",
+      "nickName": "dd",
+      "comment": "ddd",
+      "cocktailId": "54857788-acb2-e9e4-77a6-443168c7806a",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "d8f3573b-3981-1994-f2d6-97584fff8170",
+      "nickName": "데킬라 마니아",
+      "comment": "너무맛있어보입니다!!",
       "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
     }

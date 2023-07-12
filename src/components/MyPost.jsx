@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import useInput from "../hooks/useInput";
 import Button from "./Button";
+import CategorySelect from "./CategorySelect";
 
 const CocktailsContainer = styled.div`
   margin: 50px auto;
@@ -89,15 +90,15 @@ const FormContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const InputTitle = styled.h2`
-  color: #657af0;
+  color: #525252;
   font-weight: bold;
+  float: left;
 `;
 
 const NameInput = styled.input`
@@ -108,6 +109,7 @@ const NameInput = styled.input`
   margin-top: 20px;
   border: none;
   background-color: #f5f5f5;
+  outline: none;
 `;
 
 const TasteInput = styled(NameInput)``;
@@ -122,6 +124,7 @@ const RecipeInput = styled.textarea`
   margin-top: 20px;
   border: none;
   background-color: #f5f5f5;
+  outline: none;
 `;
 
 const categoryOptions = [
@@ -229,18 +232,6 @@ function MyPost() {
     if (confirmed) {
       deleteMutation.mutate(id);
     }
-  };
-
-  const CategorySelect = ({ value, onChange, options }) => {
-    return (
-      <select value={value} onChange={onChange}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    );
   };
 
   return (

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import useInput from "../hooks/useInput";
 import { auth } from "../service/firebase";
+import Button from "./Button";
 import {
   signInWithPopup,
   GoogleAuthProvider,
@@ -42,7 +43,6 @@ const FormContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  border-radius: 8px;
 `;
 
 const LoginForm = styled.form`
@@ -50,8 +50,9 @@ const LoginForm = styled.form`
 `;
 
 const InputTitle = styled.h2`
+  margin-top: 10px;
   font-size: 25px;
-  color: #657af0;
+  color: #3e3e3e;
   font-weight: bold;
 `;
 
@@ -100,10 +101,12 @@ function SignIn() {
         password
       );
       console.log("user with signIn", userCredential.user);
+      setOpen(!open);
     } catch (error) {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log("error with signIn", errorCode, errorMessage);
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
+      // console.log("error with signIn", errorCode, errorMessage);
+      alert("아이디 또는 비밀번호가 일치하지 않습니다.");
     }
   };
 
@@ -148,7 +151,9 @@ function SignIn() {
               placeholder="비밀번호를 입력해주세요."
               onChange={passwordHandler}
             />
-            <button onClick={signInWithEmail}>로그인</button>
+            <Button onClick={signInWithEmail} type="loginBtn">
+              로그인
+            </Button>
             <button
               style={{
                 width: "250px",
@@ -171,6 +176,9 @@ function SignIn() {
               구글 계정으로 로그인
             </button>
           </LoginForm>
+          <Button onClick={openLoginModalHandler} type={"close"}>
+            x
+          </Button>
         </FormContainer>
       </ModalDiv>
     </>

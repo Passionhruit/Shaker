@@ -17,7 +17,8 @@ import {
 import Button from "./Button";
 
 const CommentsContainer = styled.div`
-  width: 800px;
+  width: 820px;
+  background-color: #ffffff;
   padding: 20px;
   margin: 70px auto 0px auto;
   border: 1px solid white;
@@ -25,24 +26,26 @@ const CommentsContainer = styled.div`
 
 const NicknameInput = styled.input`
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid gray;
   width: 200px;
-  height: 30px;
+  height: 25px;
   padding: 5px;
-  color: white;
+  color: black;
 `;
 const CommentInput = styled.input`
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid gray;
   margin-left: 20px;
   width: 500px;
-  height: 30px;
+  height: 25px;
   padding: 5px;
-  color: white;
+  color: black;
 `;
 
 const CommentContainer = styled.div`
-  margin-top: 10px;
+  margin-top: 15px;
+  height: 30px;
+  line-height: 30px;
 `;
 
 const CommentNickname = styled.h3`
@@ -52,18 +55,34 @@ const CommentNickname = styled.h3`
   font-size: 17px;
   font-weight: bold;
   display: inline-block;
+  color: black;
 `;
 
 const CommentContent = styled.p`
   font-size: 17px;
-  margin-left: 20px;
-  width: 500px;
+  margin-left: 30px;
+  width: 510px;
   height: 20px;
   text-align: center;
   display: inline-block;
+  color: black;
 `;
 
-const DeleteBtn = styled.button``;
+const DeleteBtn = styled.button`
+  margin-left: 25px;
+  width: 55px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #454444;
+    color: white;
+    border-radius: 5px;
+  }
+  display: ${(props) =>
+    props.currentuserid == props.userid ? "inline-block" : "none"};
+`;
 
 function Comments() {
   const [nickName, nickNameHandler] = useInput();
@@ -73,6 +92,7 @@ function Comments() {
 
   const params = useParams();
   const { id } = params;
+  const currentUserId = auth.currentUser ? auth.currentUser.uid : null;
 
   // 리액트 쿼리 관련 코드
   const queryClient = useQueryClient();
@@ -92,23 +112,27 @@ function Comments() {
 
   const addCommentHandler = async (e) => {
     e.preventDefault();
-    // 사진 제외한 모든 항목 입력 필터
-    if (nickName && comment) {
-      const newComment = {
-        id: uuid(),
-        nickName,
-        comment,
-        cocktailId: id,
-        userId: auth.currentUser.uid,
-      };
+    if (currentUserId) {
+      // 사진 제외한 모든 항목 입력 필터
+      if (nickName && comment) {
+        const newComment = {
+          id: uuid(),
+          nickName,
+          comment,
+          cocktailId: id,
+          userId: auth.currentUser.uid,
+        };
 
-      mutation.mutate(newComment);
+        mutation.mutate(newComment);
 
-      // 폼 초기화
-      nickNameHandler({ target: { value: "" } });
-      commentHandler({ target: { value: "" } });
+        // 폼 초기화
+        nickNameHandler({ target: { value: "" } });
+        commentHandler({ target: { value: "" } });
+      } else {
+        alert("모든 항목을 입력해주세요.");
+      }
     } else {
-      alert("모든 항목을 입력해주세요.");
+      alert("로그인 후 사용해주세요.");
     }
   };
 
@@ -133,7 +157,9 @@ function Comments() {
         onChange={commentHandler}
         placeholder="내용을 입력하세요."
       />
-      <button onClick={addCommentHandler}>등록</button>
+      <Button onClick={addCommentHandler} type="commentBtn">
+        등록
+      </Button>
       {data
         ?.filter((comment) => comment.cocktailId == params.id)
         .map((comment) => {
@@ -145,6 +171,8 @@ function Comments() {
                 onClick={() => {
                   deleteCommentHandler(comment.id);
                 }}
+                currentuserid={currentUserId}
+                userid={comment.userId}
               >
                 삭제
               </DeleteBtn>

@@ -14,6 +14,7 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import { doc, setDoc, getDoc } from "firebase/firestore";
+import Button from "./Button";
 
 const Nav = styled.li`
   margin-left: 30px;
@@ -41,7 +42,6 @@ const FormContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  border-radius: 8px;
 `;
 
 const SignUpForm = styled.form`
@@ -49,8 +49,9 @@ const SignUpForm = styled.form`
 `;
 
 const InputTitle = styled.h2`
+  margin-top: 10px;
   font-size: 25px;
-  color: #657af0;
+  color: #3e3e3e;
   font-weight: bold;
 `;
 
@@ -102,6 +103,7 @@ function SignUp() {
         password
       );
       console.log(userCredential);
+      setOpen(!open);
     } catch (error) {
       console.error(error);
     }
@@ -127,23 +129,28 @@ function SignUp() {
             <EmailInput
               type="text"
               value={email}
-              placeholder="이메일을 입력해주세요."
+              placeholder="아이디 (이메일 주소)"
               onChange={emailHandler}
             />
             <PasswordInput
               type="password"
               value={password}
-              placeholder="비밀번호를 입력해주세요."
+              placeholder="비밀번호"
               onChange={passwordHandler}
             />
             <CheckPasswordInput
               type="password"
               value={checkPassword}
-              placeholder="비밀번호를 다시 입력해주세요."
+              placeholder="비밀번호 확인"
               onChange={checkPasswordHandler}
             />
-            <button onClick={signUpHandler}>회원가입</button>
+            <Button onClick={signUpHandler} type="loginBtn">
+              회원가입
+            </Button>
           </SignUpForm>
+          <Button onClick={openSignUpModalHandler} type={"close"}>
+            x
+          </Button>
         </FormContainer>
       </ModalDiv>
     </>

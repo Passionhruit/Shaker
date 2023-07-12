@@ -12,7 +12,7 @@ const AddCocktailBtn = styled.button`
   cursor: pointer;
   float: right;
   &:hover {
-    background-color: #e6e4e4;
+    background-color: #fafafa;
     color: black;
   }
 `;
@@ -57,9 +57,30 @@ const EditBtn = styled.button`
   }
 `;
 
-const DeleteCommentBtn = styled.button`
-  width: 50px;
-  height: 25px;
+const CommentBtn = styled.button`
+  width: 55px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: black;
+  cursor: pointer;
+  margin-left: 20px;
+  &:hover {
+    background-color: #353434;
+    color: #ffffff;
+  }
+`;
+
+const LoginBtn = styled.button`
+  width: 70px;
+  height: 27px;
+  display: block;
+  background-color: #3e3e3e;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto 0 auto;
 `;
 
 function Button({ children, onClick, type }) {
@@ -78,8 +99,11 @@ function Button({ children, onClick, type }) {
     case "edit":
       ButtonComponent = EditBtn;
       break;
-    case "deleteComment":
-      ButtonComponent = DeleteCommentBtn;
+    case "commentBtn":
+      ButtonComponent = CommentBtn;
+      break;
+    case "loginBtn":
+      ButtonComponent = LoginBtn;
       break;
     default:
       ButtonComponent = CommonBtn;

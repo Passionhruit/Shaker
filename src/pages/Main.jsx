@@ -40,7 +40,7 @@ const ViewMore = styled.button`
   margin-top: 10px;
   cursor: pointer;
   &:hover {
-    background-color: #e6e4e4;
+    background-color: #fafafa;
     color: #202020;
   }
 `;
