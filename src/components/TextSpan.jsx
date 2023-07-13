@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 import { useState } from "react";
 
 const StSpan = styled(motion.span)`
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 500;
   display: inline-block;
   &:hover {

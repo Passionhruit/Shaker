@@ -3,7 +3,7 @@ import TextSpan from "./TextSpan";
 import { styled } from "styled-components";
 
 const TextContainer = styled.div`
-  margin-top: 22%;
+  margin-top: 21%;
 `;
 
 function MainText() {

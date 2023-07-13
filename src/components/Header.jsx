@@ -16,7 +16,7 @@ const HeaderContainer = styled.div`
 
 const Title = styled.h1`
   margin-left: 100px;
-  font-size: 40px;
+  font-size: 35px;
 
   font-weight: bold;
   cursor: pointer;
@@ -24,7 +24,7 @@ const Title = styled.h1`
 
 const NavContainer = styled.ul`
   display: flex;
-  font-size: 14px;
+  font-size: 13px;
 `;
 
 const Nav = styled.li`
