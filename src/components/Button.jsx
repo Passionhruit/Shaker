@@ -2,8 +2,8 @@ import React from "react";
 import { styled } from "styled-components";
 
 const AddCocktailBtn = styled.button`
-  width: 100px;
-  height: 30px;
+  width: 90px;
+  height: 27px;
   font-size: 14px;
   margin-top: 20px;
   border: 1px solid white;

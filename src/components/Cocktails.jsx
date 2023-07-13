@@ -58,8 +58,8 @@ const SearchForm = styled.form`
 `;
 
 const SearchInput = styled.input`
-  width: 180px;
-  height: 20px;
+  width: 200px;
+  height: 17px;
   padding: 5px;
   color: white;
   background-color: transparent;

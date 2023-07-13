@@ -3,10 +3,11 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     body {
         max-width: 1200px;
-        min-height: 700px;
+        min-height: 100%;
         margin: 0 auto;
         color: white;
-        background: linear-gradient(to bottom,#1c1c1c,#0f0f0f);
+        /* background: linear-gradient(to bottom,#1c1c1c,#0f0f0f); */
+        background-color: #191919;
         font-family: 'NanumBarunGothic', sans-serif;
     }
 

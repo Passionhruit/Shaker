@@ -2,12 +2,12 @@ import React from "react";
 import { styled } from "styled-components";
 
 const ListSelect = styled.select`
-  width: 100px;
-  height: 30px;
+  width: 90px;
+  height: 27px;
   background-color: transparent;
   color: white;
   border: 1px solid white;
-  font-size: 15px;
+  font-size: 14px;
   padding-left: 8px;
   margin-top: 20px;
   outline: none;
