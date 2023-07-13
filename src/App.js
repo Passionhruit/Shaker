@@ -7,9 +7,9 @@ import app from "./service/firebase";
 const queryClient = new QueryClient();
 
 function App() {
-  useEffect(() => {
-    // console.log("app", app);
-  }, []);
+  // useEffect(() => {
+  //   // console.log("app", app);
+  // }, []);
   return (
     <QueryClientProvider client={queryClient}>
       <Reset />
