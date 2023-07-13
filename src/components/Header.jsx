@@ -5,7 +5,6 @@ import SignUp from "./SignUp";
 import { useNavigate } from "react-router-dom";
 
 const HeaderContainer = styled.div`
-  max-width: 1200px;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -16,7 +15,7 @@ const HeaderContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  margin-left: 40px;
+  margin-left: 100px;
   font-size: 40px;
 
   font-weight: bold;
