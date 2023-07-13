@@ -44,7 +44,6 @@ const CommentInput = styled.input`
 
 const CommentContainer = styled.div`
   margin-top: 15px;
-  height: 30px;
   line-height: 30px;
 `;
 

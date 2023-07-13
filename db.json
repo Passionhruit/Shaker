@@ -188,6 +188,16 @@
       "recipe": "1. 깔루아 30mL\n2. 우유 90~120mL",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "리큐르"
+    },
+    {
+      "id": "a9598318-2537-9097-0b54-7cf5ec29acef",
+      "name": "프렌치 마티니",
+      "taste": "뉴욕의 바에서 개발된 마티니",
+      "garnish": "라즈베리",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A6%E1%86%AB%E1%84%8E%E1%85%B5%E1%84%86%E1%85%A1%E1%84%90%E1%85%B5%E1%84%82%E1%85%B5.jpeg?alt=media&token=982846c2-eef0-457c-8141-d3bd54abf99b",
+      "recipe": "1. 보드카 45mL\n2. 블랙 라즈베리 리큐르 15mL\n3. 파인애플 주스 15mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "보드카"
     }
   ],
   "comments": [
