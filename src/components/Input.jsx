@@ -75,6 +75,7 @@ const categoryOptions = [
   { value: "", label: "베이스주" },
   { value: "데킬라", label: "데킬라" },
   { value: "럼", label: "럼" },
+  { value: "리큐르", label: "리큐르" },
   { value: "보드카", label: "보드카" },
   { value: "위스키", label: "위스키" },
   { value: "진", label: "진" },

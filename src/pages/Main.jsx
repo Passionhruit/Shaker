@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { styled } from "styled-components";
 import GlobalStyle from "../GlobalStyle";
-import cocktail from "../img/cocktail.png";
+import cocktail from "../img/cocktail.avif";
 import { useNavigate } from "react-router-dom";
 import MainText from "../components/MainText";
 
@@ -19,8 +19,8 @@ const MainContainer = styled.div`
       rgba(20, 20, 20, 0.7) 70%,
       rgba(20, 20, 20, 1)
     ),
-    url(https://images.unsplash.com/photo-1581646835395-97e291c4aab5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1746&q=80);
-  /* url(${cocktail}); */
+    /* url(https://images.unsplash.com/photo-1581646835395-97e291c4aab5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1746&q=80); */
+      url(${cocktail});
   background-size: cover;
 `;
 

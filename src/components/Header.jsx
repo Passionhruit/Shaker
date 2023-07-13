@@ -44,7 +44,7 @@ function Header() {
         >
           칵테일
         </Nav>
-        <Nav>검색하기</Nav>
+        {/* <Nav>검색하기</Nav> */}
       </NavContainer>
       <Title
         onClick={() => {

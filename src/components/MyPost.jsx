@@ -130,6 +130,7 @@ const RecipeInput = styled.textarea`
 const categoryOptions = [
   { value: "", label: "베이스주" },
   { value: "럼", label: "럼" },
+  { value: "리큐르", label: "리큐르" },
   { value: "보드카", label: "보드카" },
   { value: "위스키", label: "위스키" },
   { value: "진", label: "진" },
@@ -305,7 +306,7 @@ function MyPost() {
                         <input
                           type="file"
                           onChange={fileSelectHandler}
-                          style={{ color: "black" }}
+                          style={{ color: "black", float: "left" }}
                         />
                       </p>
                       <Button onClick={(e) => updateHandler(modalId, e)}>

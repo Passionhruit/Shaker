@@ -1,5 +1,4 @@
 import api from "../axios/api";
-import { useQuery } from "react-query";
 
 // axios 요청이 들어가는 모든 모듈
 

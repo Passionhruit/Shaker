@@ -148,6 +148,46 @@
       "recipe": "1. 버번 위스키 45mL\n2. 스위트 베르무트 22.5mL\n3. 앙고스투라 비터스 1Dash",
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
       "category": "위스키"
+    },
+    {
+      "id": "55b1c2cb-38d2-0c39-2a33-479c5a6e3194",
+      "name": "싱가폴 슬링",
+      "taste": "체리 향의 진 베이스 칵테일",
+      "garnish": "저민 오렌지, 체리",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%89%E1%85%B5%E1%86%BC%E1%84%80%E1%85%A1%E1%84%91%E1%85%A9%E1%86%AF%E1%84%89%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC.jpeg?alt=media&token=6e399938-57cb-4539-aa9a-bccf199af712",
+      "recipe": "1. 진 45mL\n2. 레몬 주스 15mL\n3. 설탕 1tsp\n4. 탄산수\n5. 체리 플레이버드 브랜디 15mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "진"
+    },
+    {
+      "id": "25ebe1a4-2d37-4127-5763-6adacee07d91",
+      "name": "미도리사워",
+      "taste": "멜론 리큐르의 미도리 칵테일",
+      "garnish": "체리, 저민 오렌지",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%86%E1%85%B5%E1%84%83%E1%85%A9%E1%84%85%E1%85%B5%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AF.jpeg?alt=media&token=fedb7bdb-ce52-4829-817d-b5f99b7828c2",
+      "recipe": "1. 미도리 30mL\n2. 스윗 앤 사워 믹스 60mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "리큐르"
+    },
+    {
+      "id": "b748ffb5-7a8f-6132-dc53-227901b026b3",
+      "name": "롱 아일랜드 아이스 티",
+      "taste": "4가지 가주가 들어간 칵테일",
+      "garnish": "레몬 웨지",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%85%E1%85%A9%E1%86%BC%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%85%E1%85%A2%E1%86%AB%E1%84%83%E1%85%B3%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5.webp?alt=media&token=4fe879f2-4f87-484d-96b0-dcb238a4f833",
+      "recipe": "1. 드라이 진 15mL\n2. 보드카 15mL\n3. 화이트 럼 15mL\n4. 데킬라 15mL\n5. 트리플 섹 15mL\n6. 스윗 앤 사워믹스 45mL\n7. 콜라 Top up",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": ""
+    },
+    {
+      "id": "4996f1ab-c6e9-b2ed-2968-5416b7802582",
+      "name": "깔루아 밀크",
+      "taste": "깔루아 베이스 우유 칵테일",
+      "garnish": "없음",
+      "img": "https://firebasestorage.googleapis.com/v0/b/cocktail-bcbcf.appspot.com/o/9EiAxT98KRdW8cuYa7013e4jBOt2%2F%E1%84%81%E1%85%A1%E1%86%AF%E1%84%85%E1%85%AE%E1%84%8B%E1%85%A1%E1%84%86%E1%85%B5%E1%86%AF%E1%84%8F%E1%85%B3.avif?alt=media&token=a40c467b-b754-4732-9b66-6029042ca13b",
+      "recipe": "1. 깔루아 30mL\n2. 우유 90~120mL",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2",
+      "category": "리큐르"
     }
   ],
   "comments": [
@@ -159,18 +199,25 @@
       "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
     },
     {
-      "id": "d8f3573b-3981-1994-f2d6-97584fff8170",
-      "nickName": "데킬라 마니아",
-      "comment": "너무맛있어보입니다!!",
-      "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
-      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
-    },
-    {
       "id": "c322d6f6-2735-0898-781f-64ef7bde63f3",
       "nickName": "깃허브",
       "comment": "스프리츠 제일 좋아해요!",
       "cocktailId": "e3da4bf6-3201-72c1-542a-aa9ccd362e52",
       "userId": "zfKvBflpCWbdF8D20wTRzT1X7TE3"
+    },
+    {
+      "id": "82218d3d-6714-d1f2-2abb-5dd07c180e96",
+      "nickName": "오렌지",
+      "comment": "제가 제일 좋아하는 칵테일 이에요! 🍹",
+      "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
+    },
+    {
+      "id": "9a022a77-2067-ce17-4d56-2432e4524b69",
+      "nickName": "시럽",
+      "comment": "데킬라 대신 보드카를 넣으면 어떨까요 ?",
+      "cocktailId": "7c501bd3-da10-f540-42ee-7e4d89305310",
+      "userId": "9EiAxT98KRdW8cuYa7013e4jBOt2"
     }
   ]
 }

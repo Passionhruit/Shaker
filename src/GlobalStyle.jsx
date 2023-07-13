@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         max-width: 1200px;
-        min-height: 900px;
+        min-height: 700px;
         margin: 0 auto;
         color: white;
         background: linear-gradient(to bottom,#1c1c1c,#0f0f0f);
