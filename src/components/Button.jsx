@@ -75,6 +75,7 @@ const LoginBtn = styled.button`
   width: 70px;
   height: 27px;
   display: block;
+  line-height: 27px;
   background-color: #3e3e3e;
   color: white;
   border-radius: 5px;

@@ -71,6 +71,7 @@ const EmailInput = styled.input`
 const CheckId = styled.button`
   background-color: transparent;
   border-radius: 6px;
+  font-size: 13px;
   width: 60px;
   height: 30px;
   border: none;

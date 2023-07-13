@@ -4,9 +4,8 @@ import { styled } from "styled-components";
 const ListSelect = styled.select`
   width: 90px;
   height: 27px;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
+  background-color: #e3e3e3;
+  color: #191919;
   font-size: 14px;
   padding-left: 8px;
   margin-top: 20px;
