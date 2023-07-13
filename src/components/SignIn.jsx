@@ -13,7 +13,6 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
 } from "firebase/auth";
-import { doc, setDoc, getDoc } from "firebase/firestore";
 import github from "../img/github.png";
 import google from "../img/google.png";
 

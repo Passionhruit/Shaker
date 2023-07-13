@@ -3,8 +3,6 @@ import { useState } from "react";
 import { getDownloadURL, uploadBytes, ref } from "firebase/storage";
 import { storage, auth } from "../service/firebase";
 import uuid from "react-uuid";
-import axios from "axios";
-import api from "../axios/api";
 import { useMutation, useQueryClient } from "react-query";
 import { addCocktail } from "../api/cocktails";
 import { styled } from "styled-components";
@@ -97,7 +95,6 @@ function Input() {
   const mutation = useMutation(addCocktail, {
     onSuccess: () => {
       queryClient.invalidateQueries("cocktails");
-      console.log("성공하였습니다.");
     },
   });
 
@@ -120,7 +117,7 @@ function Input() {
     if (name && taste && garnish && recipe) {
       // 파일 선택 여부 확인
       if (!selectedFile) {
-        console.log("파일을 선택해주세요.");
+        alert("파일을 선택해주세요.");
         return;
       }
 

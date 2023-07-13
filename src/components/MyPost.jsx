@@ -160,14 +160,12 @@ function MyPost() {
   const deleteMutation = useMutation(deleteCocktail, {
     onSuccess: () => {
       queryClient.invalidateQueries("cocktails");
-      console.log("삭제되었습니다.");
     },
   });
 
   const updateMutation = useMutation(updateCocktail, {
     onSuccess: () => {
       queryClient.invalidateQueries("cocktails");
-      console.log("수정되었습니다.");
     },
   });
 

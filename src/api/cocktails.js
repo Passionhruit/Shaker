@@ -5,7 +5,6 @@ import api from "../axios/api";
 // 조회
 const getCocktails = async () => {
   const response = await api.get(`/cocktails`);
-  console.log(response.data);
   return response.data;
 };
 

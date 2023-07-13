@@ -5,7 +5,6 @@ import api from "../axios/api";
 // 조회
 const getComments = async () => {
   const response = await api.get(`/comments`);
-  console.log(response.data);
   return response.data;
 };
 
@@ -15,7 +14,6 @@ const addComment = async (newComment) => {
 };
 
 // 삭제
-
 const deleteComment = async (id) => {
   await api.delete(`/comments/${id}`);
 };

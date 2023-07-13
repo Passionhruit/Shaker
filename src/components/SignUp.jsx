@@ -6,15 +6,10 @@ import { useState } from "react";
 import { auth } from "../service/firebase";
 import { useNavigate } from "react-router-dom";
 import {
-  signInWithPopup,
-  GoogleAuthProvider,
-  GithubAuthProvider,
-  signOut,
   createUserWithEmailAndPassword,
   fetchSignInMethodsForEmail,
   onAuthStateChanged,
 } from "firebase/auth";
-import { doc, setDoc, getDoc } from "firebase/firestore";
 import Button from "./Button";
 
 const Nav = styled.li`

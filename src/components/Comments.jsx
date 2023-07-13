@@ -80,7 +80,7 @@ const DeleteBtn = styled.button`
     border-radius: 5px;
   }
   display: ${(props) =>
-    props.currentuserid == props.userid ? "inline-block" : "none"};
+    props.currentuserid === props.userid ? "inline-block" : "none"};
 `;
 
 function Comments() {
@@ -160,7 +160,7 @@ function Comments() {
         등록
       </Button>
       {data
-        ?.filter((comment) => comment.cocktailId == params.id)
+        ?.filter((comment) => comment.cocktailId === params.id)
         .map((comment) => {
           return (
             <CommentContainer>
