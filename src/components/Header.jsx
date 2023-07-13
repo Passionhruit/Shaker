@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const HeaderContainer = styled.div`
   position: relative;
-  margin: 0 auto;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   height: 70px;

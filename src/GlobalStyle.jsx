@@ -1,10 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-    *{
-        font-family: 'Noto Sans KR';
-    }
-
     body {
         max-width: 1200px;
         min-height: 700px;
