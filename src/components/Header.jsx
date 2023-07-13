@@ -5,6 +5,7 @@ import SignUp from "./SignUp";
 import { useNavigate } from "react-router-dom";
 
 const HeaderContainer = styled.div`
+  max-width: 1200px;
   position: relative;
   margin: 0 auto;
   display: flex;
