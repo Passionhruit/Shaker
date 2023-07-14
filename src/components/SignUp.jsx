@@ -85,12 +85,20 @@ const PasswordInput = styled(EmailInput)``;
 
 const CheckPasswordInput = styled(EmailInput)``;
 
+const VerifyMessage = styled.p`
+  font-size: 12px;
+  line-height: 15px;
+  height: 15px;
+  color: ${(props) => (props.invalid ? "red" : "blue")};
+`;
+
 function SignUp() {
   const [open, setOpen] = useState("");
   const [join, setJoin] = useState("회원가입");
   const [email, emailHandler] = useInput();
-  const [password, passwordHandler] = useInput();
+  const [password, setPassword] = useState("");
   const [checkPassword, checkPasswordHandler] = useInput();
+  const [passwordverify, setPasswordVerify] = useState(true);
 
   const navigate = useNavigate();
 
@@ -106,6 +114,11 @@ function SignUp() {
     emailHandler({ target: { value: "" } });
     passwordHandler({ target: { value: "" } });
     checkPasswordHandler({ target: { value: "" } });
+  };
+
+  const passwordHandler = (e) => {
+    setPassword(e.target.value);
+    setPasswordVerify(e.target.value.length < 8 && e.target.value.length !== 0);
   };
 
   // 회원가입
@@ -191,6 +204,14 @@ function SignUp() {
               placeholder="비밀번호"
               onChange={passwordHandler}
             />
+            {passwordverify && password && (
+              <VerifyMessage invalid={passwordverify ? "true" : undefined}>
+                비밀번호가 8자리 미만입니다.
+              </VerifyMessage>
+            )}
+            {!passwordverify && password && (
+              <VerifyMessage>8자리 이상입니다.</VerifyMessage>
+            )}
             <CheckPasswordInput
               type="password"
               value={checkPassword}

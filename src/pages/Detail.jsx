@@ -61,7 +61,6 @@ const RecipeSubTitle = styled.h3`
 
 function Detail() {
   const { isLoading, isError, data } = useQuery("cocktails", getCocktails);
-  console.log(data);
   const { id } = useParams();
   const navigate = useNavigate();
 
