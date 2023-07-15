@@ -6,6 +6,7 @@ import { useQuery } from "react-query";
 import { styled } from "styled-components";
 import useInput from "../hooks/useInput";
 import CategorySelect from "./CategorySelect";
+import Loading from "./Loading";
 
 const CocktailsContainer = styled.div`
   margin: 20px auto;
@@ -86,6 +87,13 @@ function Cocktails() {
 
   const navigate = useNavigate();
 
+  if (isLoading) {
+    return <Loading />;
+  }
+
+  if (isError) {
+    return <h1>로딩 중 오류가 발생하였습니다.</h1>;
+  }
   return (
     <>
       <CategorySelect
