@@ -1,4 +1,4 @@
-# [리액트 심화 주차] 주류 레시피 공유 웹사이트, Shaker
+# [개인 프로젝트] 주류 레시피 공유 웹사이트, Shaker
 
 스파르타코딩클럽 6기_React
 
@@ -70,7 +70,6 @@ React-query, firebase auth 를 활용하여 제작한 주류, 칵테일 레시�
   
 ## 사용 툴
   * Visual Studio
-  * 
 <div align=“center”>
 	  <img src="https://img.shields.io/badge/visualstudio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white">
   </div>
